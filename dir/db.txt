@@ -1,0 +1,6 @@
+{"command":"SET","key":"key1","value":"val1"}
+{"command":"SET","key":"key1","value":"val2"}
+{"command":"SET","key":"key1","value":"val3"}
+{"command":"SET","key":"key1","value":"a"}
+{"command":"SET","key":"key1","value":"a"}
+{"command":"SET","key":"key1","value":"a"}
