@@ -42,10 +42,9 @@ fn main() -> Result<(), String> {
             println!("Key {}", k);
             println!("Value {}", v);
 
-
             match kv_store.set(k, v) {
                 Ok(()) => Ok(()),
-                Err(err) => Err(err)
+                Err(err) => Err(err),
             };
         }
         Commands::Rm { key } => {

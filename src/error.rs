@@ -1,10 +1,9 @@
-use std::{fmt, io, error};
-
+use std::{error, fmt, io};
 
 #[derive(Debug)]
-pub enum KvsError  {
+pub enum KvsError {
     Io(io::Error),
-    KeyNotFound
+    KeyNotFound,
 }
 
 impl fmt::Display for KvsError {
@@ -20,7 +19,7 @@ impl error::Error for KvsError {
     fn cause(&self) -> Option<&dyn error::Error> {
         match *self {
             KvsError::Io(ref err) => Some(err),
-            KvsError::KeyNotFound => None
+            KvsError::KeyNotFound => None,
         }
     }
 }
